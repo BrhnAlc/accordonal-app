@@ -9,6 +9,9 @@ function App() {
     <div className="App">
       <h1>FAQ APP</h1>
       <Accordion/>
+      <Accordion/>
+      <Accordion/>
+      <Accordion/>
     </div>
   );
 }
