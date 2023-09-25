@@ -1,21 +1,34 @@
 
 
-const Accordion = () => {
+const Accordion = ({title ,acor,setAcor}) => {
+  
   return (
     <div className="accordion" >  
      <div className="accordionHeading" >
       <div className="container">
-        <p>Question 1</p>
-       <span>Click Me</span>
+        <p>{title}</p>
+       <span onClick={()=>setAcor(title)}>Click Me</span>
     </div>
       </div>
-        <div className="accordionContent">
-          <div className="container">
-             <p>Lorem ipsum dolor sit amet.</p>
+      <div className={(acor===title ? "show" : "") + "accordionContent"}>
+      <div className="container">
+       <p>Lorem ipsum dolor sit amet.</p>
     </div>
     </div>
     </div>
   )
 }
 
-export default Accordion
+export default Accordion;
+
+
+
+
+
+
+
+
+
+
+
+

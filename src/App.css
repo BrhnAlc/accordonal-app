@@ -68,3 +68,7 @@ h1{
   line-height: 1.6;
   color: black;
 }
+.container p{
+  color: black;
+ height: 50px;
+}
